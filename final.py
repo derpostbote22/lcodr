@@ -441,8 +441,6 @@ def compute_figure(v2g_wta_5,v2g_wta_15,
 #    return x, y, z
 
 def send_email(email, results):
-    sender_email = "jacobthraen@gmail.com"
-    sender_password = "qeto fysv dhka aafr"
     recipient_email = email
 
     subject = "Your Computation Results"
@@ -532,4 +530,5 @@ if st.button("Compute"):
         #if email:
             send_email(email, (10,20,30))
         #else:
+
         #    st.error("Please enter your email address.")
