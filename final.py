@@ -43,8 +43,8 @@ if "resultsdisplaystate" not in ss:
 #    return x, y, z
 
 def send_email(email, fig):
-    sender_email = st.secrets["email"]["sender_email"]
-    sender_password = st.secrets["email"]["sender_password"]
+    sender_email = st.secrets["sender_email"]
+    sender_password = st.secrets["sender_password"]
     recipient_email = email
 
     if type(email) == 'NoneType':
@@ -227,4 +227,5 @@ if ss.resultsdisplaystate:
 
     #st.write(email)
 #st.subheader("Heat Pump with Thermal Storage")
+
 
