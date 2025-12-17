@@ -419,5 +419,6 @@ def compute_figure(v2g_wta_5,v2g_wta_15,
         ax.yaxis.set_tick_params(labelsize=13)
         ax.set_xticks(labels_text2 + [stor_tech[idx]])
         ax.legend(prop={'size': 13})
-    plt.savefig("C:/Users/simon/local python/" + numberstring + ".png", format="png", bbox_inches="tight")    
+    #plt.savefig("C:/Users/simon/local python/" + numberstring + ".png", format="png", bbox_inches="tight")    
+
     return fig, ax
